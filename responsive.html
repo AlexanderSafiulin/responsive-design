@@ -31,6 +31,52 @@
           <img src="images/feature.svg"/>
         </div>
     </div>
+
+    <!-- <div class="section content">
+      <div class="illustration">
+        <img src="images/illustration-big.png" style="max-width: 500px"/>
+      </div>
+    </div> это все предыдущие варианты хедера
+
+
+    <div class="section header">
+      <div class="photo">
+        <img src="images/photo-small.jpg"
+          srcset="images/photo-big.jpg 2000w,
+                  images/photo-small.jpg 1000w"
+          sizes="(min-width: 960px) 960px,
+                  100vw"/>
+      </div>
+    </div> Сейчас ниже будем делать разные картинки в зависимости от экрана пользователя-->
+
+    <div class="section header">
+      <div class="photo">
+        <picture>
+          <source media="(min-width: 401px)"
+                  srcset="images/photo-big.jpg"/>
+          <source media="(max-width: 400px)"
+                  srcset="images/photo-tall.jpg"/>
+          <img src="images/photo-small.jpg"/>
+        </picture>
+      </div>
+    </div>
+    
+
+    <div class="illustration">
+      <img src="illustration-small.png"
+        srcset="images/illustration-small.png 1x,
+                images/illustration-big.png 2x" 
+                
+        style="max-width: 500px"/>
+    </div>
+
+    <!-- 2x - это для Retina дисплеев, а 1х для обычных. 
+      Атрибут srcset указывает на список альтернатив для маленького изображения 
+    Оптимизация для retina-экранов через srcset подходит для изображений 
+    шириной меньше 600 пикселей.-->
+
+
+    
     
   </body>
 

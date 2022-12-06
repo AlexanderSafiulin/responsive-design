@@ -47,12 +47,20 @@
     background-color: #ffffff;
   }
   
+  .illustration img {
+    width: 100%;
+    display: block; /*внимание, тут этот дисплей блок*/
+  }
+
+  
   /* Макет для мобильных */
   @media only screen and (max-width: 400px) {
     body {
       background-color: #29fd2f; /* Зеленый */
     }
   }
+
+  
   
   /* Макет для планшетов */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -64,6 +72,19 @@
     .feature-3 {
       width: 50%;}
 }
+
+
+.header {
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
+}
+
   
   /* Макет для десктопов */
   @media only screen and (min-width: 961px) {
@@ -89,4 +110,4 @@
      }
     
   }
-  
+
